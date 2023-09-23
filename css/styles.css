@@ -13,6 +13,12 @@ a {
   color: red;
 }
 
+aside {
+  display: inline;
+  float: right;
+  text-align: right;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -27,11 +33,10 @@ a {
 .header__greeting {
 }
 .content {
-  display: block;
+  display: flex;
   padding: 10px;
   max-width: 800px;
   width: 800px;
-  display: flex;
   flex-direction: column;
   background-color: blue;
 }
@@ -40,7 +45,7 @@ a {
 .content__square {
   display: block;
   float: left;
-  margin: 20px;
+  margin: 10px;
   width: 75px;
   height: 75px;
   border: 5px solid white;
@@ -61,29 +66,13 @@ a {
 .content__highlighted-text {
   color: red;
 }
-.content__list {
-}
-.content__list-item {
-}
-.content__list-item--spaced {
+.content__list .content__list-item:nth-child(2) {
   letter-spacing: 1ch;
-}
-.content__text--italic {
-  font-style: italic;
-}
-.content__text--bold {
-  font-weight: bold;
-}
-.content__text--underlined {
-  text-decoration: underline;
 }
 .content__like-button {
   align-self: self-end;
   width: 25px;
   height: 25px;
-}
-.content__text--strikethrough {
-  text-decoration: line-through;
 }
 .footer {
   display: flex;
@@ -95,33 +84,29 @@ a {
   background-color: green;
 }
 .footer__greeting {
+  font-family: monospace;
 }
 
-.grid {
-  align-self: flex-end;
-  width: 150px;
-  height: 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 4px;
-  padding: 4px;
+.aside__table {
+  display: inline-table;
   border: 1px solid #ffffff88;
+  border-spacing:3px;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
 }
-
-.grid__item {
+.aside__table td, tr{
   border: 1px solid #ffffff88;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width:40px;
+  height:30px;
+  padding-bottom:2px;
+  vertical-align:bottom;
 }
 
-#grid-1 {
-  grid-row: span 2;
+.aside__table tr:first-child td:first-child {
   background-color: green;
 }
 
-#grid-7 {
-  grid-column: span 2;
+.aside__table tr:last-child td:last-child {
   background-color: red;
 }

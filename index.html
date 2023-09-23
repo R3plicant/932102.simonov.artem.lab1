@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Web lab1</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header class="header">
-        <div class="header__greeting">Hello, Header!</div>
+        <nav class="header__greeting">Hello, Header!</nav>
     </header>
 
     <main class="content">
@@ -23,28 +23,39 @@
 
         <ul class="content__list">
             <li class="content__list-item">Value 1</li>
-            <li class="content__list-item content__list-item--spaced">Value 2</li>
+            <li class="content__list-item">Value 2</li>
             <li class="content__list-item">Value 3</li>
         </ul>
 
-        <div class="grid">
-            <div class="grid__item" id="grid-1">1</div>
-            <div class="grid__item" id="grid-2">2</div>
-            <div class="grid__item" id="grid-3">3</div>
-            <div class="grid__item" id="grid-4">4</div>
-            <div class="grid__item" id="grid-5">5</div>
-            <div class="grid__item" id="grid-6">6</div>
-            <div class="grid__item" id="grid-7">7</div>
-        </div>
 
-        <h3 class="content__subtitle">
-            Here are some visual styles:
-        </h3>
-        <span class="content__text content__text--italic">Italic</span>
-        <span class="content__text content__text--bold">Bold</span>
-        <span class="content__text content__text--underlined">UnderLined</span>
-        <img src="/images/like.png" alt="like" class="content__like-button">
-        <span class="content__text content__text--strikethrough">Line through</span>
+       
+        <div>
+            <h3 class="content__subtitle">
+                Here are some visual styles:
+            </h3>
+            <aside>
+                <table class="aside__table">
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td colspan="2">7</td>
+                    </tr>
+                </table>
+                <p><img src="/images/like.png" alt="like" class="content__like-button"></p>
+            </aside>
+            <p><i>Italic</i></p>
+            <p><b>Bold</b></p>
+            <p><u>UnderLined</u></p>
+            <p><s>Line through</s></p>
+        </div>
     </main>
 
     <footer class="footer">
