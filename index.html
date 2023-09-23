@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="/css/styles.css">
 </head>
-    <body>
-        
-    </body>
-    <script src="/js/jquery-3.5.1.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="/js/main.js"></script>
+<body>
+    <header class="header">
+        <div class="header__greeting">Hello, Header!</div>
+    </header>
+
+    <main class="content">
+        <h1 class="content__title">Hello, content!</h1>
+        <span class="content__text"><div class="content__square"></div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</span>
+        <span class="content__url"><a href="www.csd.tsu.ru">www.csd.tsu.ru</a></span>
+
+        <h2 class="content__subtitle" id="spaced__subtitle">
+            <span class="content__highlighted-text">Here</span>
+            is the list:
+        </h2>
+
+        <ul class="content__list">
+            <li class="content__list-item">Value 1</li>
+            <li class="content__list-item content__list-item--spaced">Value 2</li>
+            <li class="content__list-item">Value 3</li>
+        </ul>
+
+        <div class="grid">
+            <div class="grid__item" id="grid-1">1</div>
+            <div class="grid__item" id="grid-2">2</div>
+            <div class="grid__item" id="grid-3">3</div>
+            <div class="grid__item" id="grid-4">4</div>
+            <div class="grid__item" id="grid-5">5</div>
+            <div class="grid__item" id="grid-6">6</div>
+            <div class="grid__item" id="grid-7">7</div>
+        </div>
+
+        <h3 class="content__subtitle">
+            Here are some visual styles:
+        </h3>
+        <span class="content__text content__text--italic">Italic</span>
+        <span class="content__text content__text--bold">Bold</span>
+        <span class="content__text content__text--underlined">UnderLined</span>
+        <img src="/images/like.png" alt="like" class="content__like-button">
+        <span class="content__text content__text--strikethrough">Line through</span>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__greeting">Hello, Footer!</div>
+    </footer>
+</body>
 </html>
